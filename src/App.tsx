@@ -4,7 +4,7 @@ import "./App.css";
 
 function App(): JSX.Element {
     return (
-        <div className="APP">
+        <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 UD CIS Scheduler
