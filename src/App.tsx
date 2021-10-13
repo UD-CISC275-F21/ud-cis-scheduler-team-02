@@ -9,7 +9,7 @@ function App(): JSX.Element {
                 <img src={logo} className="App-logo" alt="logo" />
                 UD CIS Scheduler
                 <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
+                    Team02: Yongxu Wang, Boyuan Yang, Yufan Jiang
                 </p>
             </header>
         </div>
