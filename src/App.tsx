@@ -8,8 +8,8 @@ function App(): JSX.Element {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 UD CIS Scheduler
-                <h1>Yongxu Wang, Boyuan Yang, Yufan Jinag</h1>
                 <p>
+                    Yongxu Wang, Boyuan Yang, Yufan Jinag
                     Edit <code>src/App.tsx</code> and save to reload.
                 </p>
             </header>
