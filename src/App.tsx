@@ -8,20 +8,12 @@ function App(): JSX.Element {
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
                 UD CIS Scheduler
-                <p>
-<<<<<<< HEAD
-                    Yongxu Wang, Boyuan Yang, Yufan Jiang
-                    Edit <code>src/App.tsx</code> and save to reload.
-=======
-                    Team02: Yongxu Wang, Boyuan Yang, Yufan Jiang
->>>>>>> b73789bdece172192d4f8791dbede49220baa00e
-                </p>
+                <p>Yongxu Wang, Boyuan Yang, Yufan Jiang
+                    Edit <code>src/App.tsx</code> and save to reload.</p>
             </header>
         </div>
     );
 }
-
-
 export default App;
 
 //update test...
