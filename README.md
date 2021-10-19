@@ -1,4 +1,4 @@
-
+Yongxu Wang
 Yufan Jiang
 # 275 Final Project Starter Repo
 Hello! This repository has been pre-configured with eslint and gh-pages to automatically deploy your app when you push to the main branch. 
@@ -20,5 +20,3 @@ Make a change in `src/App.tsx`. Commit and push the change to the main branch an
 In the future, you will no longer need to use the `npm run deploy` command - you just need to have a successful push to the `main` branch and it'll automatically deploy!
 
 All your teammates will additionally need to make feature branches to add your names to the site, merging them as Pull Requests to main. Follow the instructions in the Canvas Assignment for more details.
-.....
-//add yufan branch..
