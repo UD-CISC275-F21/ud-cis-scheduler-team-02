@@ -1,6 +1,9 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Draggable from "react-draggable";
+
+
 
 function App(): JSX.Element {
     return (
@@ -9,12 +12,14 @@ function App(): JSX.Element {
                 <img src={logo} className="App-logo" alt="logo" />
                 UD CIS Scheduler
                 <p>
+                
                     Team02: Yongxu Wang, Boyuan Yang, Yufan Jiang
                 </p>
             </header>
         </div>
     );
 }
+
 
 
 export default App;
