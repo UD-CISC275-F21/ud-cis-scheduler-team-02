@@ -1,16 +1,19 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App(): JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
                 UD CIS Scheduler
-                <p>Yongxu Wang, Boyuan Yang, Yufan Jiang
-                    Edit <code>src/App.tsx</code> and save to reload.</p>
+                <p>Yongxu Wang, Boyuan Yang, Yufan Jiang</p>
             </header>
+            <button>Freshman</button>
+            <button>Sophermore</button>
+            <button>Junior</button>
+            <button>Senior</button>
+            <button>Add a semester</button>
+
         </div>
     );
 }
