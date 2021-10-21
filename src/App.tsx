@@ -1,18 +1,12 @@
 import React from "react";
 import "./App.css";
-import Draggable from "react-draggable";
 
 
 
 function App(): JSX.Element {
     return (
-        <div className="App">
-            <header className="App-header">
+        <div className="APP">
                 UD CIS Scheduler
-                <p>Yongxu Wang, Boyuan Yang, Yufan Jiang</p>
-            </header>
-            
-
         </div>
     );
 }
