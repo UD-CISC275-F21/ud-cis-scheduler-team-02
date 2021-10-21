@@ -8,11 +8,7 @@ function App(): JSX.Element {
                 UD CIS Scheduler
                 <p>Yongxu Wang, Boyuan Yang, Yufan Jiang</p>
             </header>
-            <button>Freshman</button>
-            <button>Sophermore</button>
-            <button>Junior</button>
-            <button>Senior</button>
-            <button>Add a semester</button>
+            
 
         </div>
     );
