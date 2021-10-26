@@ -4,6 +4,7 @@ import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 
 class App extends Component {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     render() {
         const tableData = [
             {
@@ -28,7 +29,7 @@ class App extends Component {
                 name: "CISC 220",
                 title: "Data Structures",
                 department: "Program",
-                term: "Fall, Spring, Summer",
+                term: "Fall and Spring",
                 language: "C++",
             },
             {
@@ -68,6 +69,5 @@ class App extends Component {
                 />
             </div>
         );
-        
     }
 } export default App;
