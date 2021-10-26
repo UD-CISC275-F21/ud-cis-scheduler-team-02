@@ -28,7 +28,7 @@ class App extends Component {
                 name: "CISC 220",
                 title: "Data Structures",
                 department: "Program",
-                term: "Fall and Spring",
+                term: "Fall, Spring, Summer",
                 language: "C++",
             },
             {
