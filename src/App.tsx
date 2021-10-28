@@ -1,18 +1,13 @@
 import React from "react";
 import "./App.css";
-<<<<<<< HEAD
 import { Dropdown} from "react-bootstrap";
 
-=======
-import "./TABLE/Table";
->>>>>>> fe7c2d360643d24f6f36a8da1554ecce96f7ccff
 
 function App(): JSX.Element {
     return (
         <div className="APP">
             <header>
                 UD CIS Scheduler
-<<<<<<< HEAD
             </header>
             <p>
                 Welcome to UD CIS Scheduler make by Yongxu Boyuan Yufan! 
@@ -75,15 +70,4 @@ function App(): JSX.Element {
         </div>
     );
 }
-=======
-                <h1>CISC 275 Final Project</h1>
-                <p>Yongxu Wang, Yufan Jiang, Boyuan Yang</p>
-            </header>
-
-            
-        </div>
-    );
-}
-
->>>>>>> fe7c2d360643d24f6f36a8da1554ecce96f7ccff
 export default App;
