@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+/* for drag */
+
+.drag-wrapper {
+  width: 200px;
+  cursor: move;
+  padding: 50px;
+  text-align: center;  
+  background: #e5e5e5;  
+}
