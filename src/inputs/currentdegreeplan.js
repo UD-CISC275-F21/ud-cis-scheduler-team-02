@@ -127,7 +127,7 @@ class CourseTables extends PureComponent{
     const MAX = (courseType || defaultCourseType).length * 4;
     for (let i = 0; i < MAX; i += 1) {
       if ((i+1) % 4 === 0 && i !== 0) {
-        // 这里的 15 为当前需要边框的元素的高度，28 为星期的高度
+       
         list.push(
             <div
                 style={{ position: 'absolute', width: '100%', height: 15, top: 15 * i + 28, left: 0, borderBottom: '1px solid rgb(238, 238, 238)' }}
@@ -169,10 +169,10 @@ class CourseTables extends PureComponent{
             <div>
               <ul className={styles.rectList}>
                 <li>
-                  教师姓名：{items.teaName}
+                  Professor：{items.teaName}
                 </li>
                 <li>
-                  学生姓名：{items.stuNameList.join('，')}
+                  StudentID：{items.stuNameList.join('，')}
                 </li>
               </ul>
             </div>
@@ -192,10 +192,10 @@ class CourseTables extends PureComponent{
                   onContextMenu={this.ContextMenu}
               >
                 <p>
-                  课程：{items.courseName}
+                  Course：{items.courseName}
                 </p>
                 <p>
-                  学生：{items.stuNameList[0]}
+                  Student：{items.stuNameList[0]}
                 </p>
               </div>
             </Popover>
@@ -333,7 +333,7 @@ class CourseTables extends PureComponent{
       Day.setHours(Hours);
       Day.setMinutes(parseInt(startTime, 10));
       Day.setSeconds(0);
-      const getTime = Day.getTime(); // 获取移动后的开始时间
+      const getTime = Day.getTime(); 
       const top = `${this.timePos[movedPos.top].top + startTime}px`;
       const left = `${this.weekPos[movedPos.left].left}px`;
       currentEl.style.top = top;
@@ -401,7 +401,7 @@ class CourseTables extends PureComponent{
     this.timePos = {};
     this.weekPos = {};
     const courseType = TYPE && TYPE.length ? TYPE : defaultCourseType;
-    const defaultHeight = 28; // 默认星期上的高度为 28，可以修改 coursesHead 的样式来调整高度，谨慎修改 QAQ，
+    const defaultHeight = 28; 
     const courseHeight = courseType.length * 60 + defaultHeight;
     const courseWidth = 920;
 
@@ -418,7 +418,7 @@ class CourseTables extends PureComponent{
                       <div key={item.date} style={{ width: contentItemWidth, left: contentItemWidth * index + timeLineWidth}}>
                         {
                           <div className={(new Date().getDate() === new Date(item.date).getDate() && new Date().getMonth() === new Date(item.date).getMonth()) ? styles.heightLightWeek : ''} style={{ textAlign: 'center', width: '100%'}}>
-                            <span>{`周${parseTime(item.date, '{a}')}`}</span>
+                            <span>{`week${parseTime(item.date, '{a}')}`}</span>
                             <span>{`${parseTime(item.date, '{m}-{d}')}`}</span>
                           </div>
                         }
@@ -475,27 +475,27 @@ class CourseTables extends PureComponent{
             </div>
           </div>
           <Modal
-              title="选择课程周数"
+              title="choose the weeks of the course"
               visible={visible}
               onOk={handleOk}
               onCancel={handleCancel}
           >
             <Spin spinning={!!loading}>
               <Form layout="horizontal">
-                <Form.Item label="日期" {...formItemLayout}>
+                <Form.Item label="date" {...formItemLayout}>
                   {getFieldDecorator('timeDate', {
                     initialValue: movedPos ? moment(parseTime(this.weekPos[movedPos.left].time)) : moment(new Date()),
-                    rules: [{ required: true, message: '请选择具体的时间' }],
+                    rules: [{ required: true, message: 'detailed time' }],
                   })(
-                      // 基本业务逻辑已完成，就没有再去实现选择日期调整位置，简单的操作 再去请求一次数据让他自己刷新吧
+                      
                       <DatePicker disabled />
                   )}
                 </Form.Item>
 
-                <Form.Item label="开始时间" {...formItemLayout}>
+                <Form.Item label="Begin Time" {...formItemLayout}>
                   {getFieldDecorator('startTime', {
                     initialValue: nearTime || nearTime === 0 ? nearTime : 5,
-                    rules: [{ required: true, message: '请选择开始时阿' }],
+                    rules: [{ required: true, message: 'Choose begin time' }],
                   })(
                       <RadioGroup>
                         {this.renderRadioList()}
