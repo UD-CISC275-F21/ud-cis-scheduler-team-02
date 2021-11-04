@@ -1,0 +1,38 @@
+[
+    {
+        "name": "CISC 108", 
+        "title": "Introduction to Computer Science I",
+        "term": "Fall and Spring",
+        "language": "Python"
+    },
+    {
+        "name": "CISC 181",
+        "title": "Introduction to Computer Science II",
+        "term": "Fall and Spring",
+        "language": "JAVA"
+    },
+    {
+        "name": "CISC 210",
+        "title": "Introduction to Systems Programming",
+        "term": "Fall and Spring",
+        "language": "C"
+    },
+    {
+        "name": "CISC 220",
+        "title": "Data Structures",
+        "term": "Fall and Spring",
+        "language": "C++"
+    },
+    {
+        "name": "CISC 260",
+        "title": "Machine Org. & Assembly",
+        "term": "Fall and Spring",
+        "language": "ARM"
+    },
+    {
+        "name": "CISC 275",
+        "title": "Introduction to Software Engineering",
+        "term": "Fall and Spring",
+        "language": "JavaScript"
+    }
+]

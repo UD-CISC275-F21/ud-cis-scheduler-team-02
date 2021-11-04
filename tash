@@ -1,0 +1,140 @@
+[33mcommit 25f38a9b7e4a9f798c2a34fbe4c378d94e6028bb[m[33m ([m[1;36mHEAD -> [m[1;32mboyuan_branch[m[33m, [m[1;31morigin/boyuan_branch[m[33m)[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 19 10:02:22 2021 -0400
+
+    test and enabled the Draggable function
+
+[33mcommit 443b289b89b8a9f3b44fe5a5ef5a8e8d7233e387[m
+Merge: d88f71b 03e95d2
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 19 09:48:29 2021 -0400
+
+    Merge branch 'boyuan_branch' of https://github.com/UD-CISC275-F21/ud-cis-scheduler-team-02 into boyuan_branch
+
+[33mcommit d88f71b2da4587245a6f2a4f8369c218908207fd[m
+Merge: 68dab99 060ba35
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 19 09:34:13 2021 -0400
+
+    try to merge
+
+[33mcommit 03e95d2842e77b3cca8878b06b1f0a5efeeac296[m
+Merge: 68dab99 060ba35
+Author: boyuan1228 <80129253+boyuan1228@users.noreply.github.com>
+Date:   Thu Oct 14 10:36:08 2021 -0400
+
+    Merge branch 'main' into boyuan_branch
+
+[33mcommit 68dab99ce17396f72fa8109c06d6e5c4424a5c24[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Thu Oct 14 10:28:14 2021 -0400
+
+    created Markdown file for example users
+
+[33mcommit 5d957d0d79ce4c0a10d81a450ff5fd8dc6619f70[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 12 22:43:26 2021 -0400
+
+    run app and modified the app
+
+[33mcommit 060ba3520ed942ba3be926db4ce5236fd8ce7b13[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 341b316 4c4efb8
+Author: oscarwyx <89887713+oscarwyx@users.noreply.github.com>
+Date:   Tue Oct 12 21:27:44 2021 -0400
+
+    Merge pull request #8 from UD-CISC275-F21/yongxu_branch
+    
+    update
+
+[33mcommit 4c4efb81d37ff2155ea3bda618c1e3b8e149d9e7[m
+Author: oscarwyx <oscarwyx@udel.edu>
+Date:   Tue Oct 12 21:27:04 2021 -0400
+
+    update
+
+[33mcommit 341b31693f1ee5ab54b3f9faa2f3e48a0be32041[m
+Merge: b98be1b e65824d
+Author: oscarwyx <89887713+oscarwyx@users.noreply.github.com>
+Date:   Tue Oct 12 21:10:19 2021 -0400
+
+    Merge pull request #7 from UD-CISC275-F21/yongxu_branch
+    
+    yongxu_branch
+
+[33mcommit e65824dc1c73fedb1daa8221de427e86e565bb2a[m
+Author: oscarwyx <oscarwyx@udel.edu>
+Date:   Tue Oct 12 21:08:48 2021 -0400
+
+    update
+
+[33mcommit 6158f2d39896dcd979a0f440ca473cccb664a6d3[m
+Author: oscarwyx <oscarwyx@udel.edu>
+Date:   Tue Oct 12 21:06:24 2021 -0400
+
+    change app.tsx
+
+[33mcommit b98be1bda852de6fedf3a7f60f09638186d351d8[m
+Merge: c36630f b27c122
+Author: oscarwyx <89887713+oscarwyx@users.noreply.github.com>
+Date:   Tue Oct 12 16:13:30 2021 -0400
+
+    Merge pull request #6 from UD-CISC275-F21/yongxu_branch
+    
+    update yongxu_branch
+
+[33mcommit b27c122337250f71cc0a384c4a2bbadeed56aab5[m
+Author: oscarwyx <oscarwyx@udel.edu>
+Date:   Tue Oct 12 16:10:20 2021 -0400
+
+    update yongxu_branch
+
+[33mcommit 7b7362e61f59882c69ac79fd062af3186c8efe6e[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 12 10:34:06 2021 -0400
+
+    push to test boyuan branch
+
+[33mcommit c36630fae62a07b92a5249e8ed44e3b70542d689[m
+Merge: 5ff0208 8be2bff
+Author: boyuan1228 <80129253+boyuan1228@users.noreply.github.com>
+Date:   Tue Oct 12 10:30:40 2021 -0400
+
+    Merge pull request #2 from UD-CISC275-F21/boyuan_branch
+    
+    boyuan_branch
+
+[33mcommit 8be2bff0218d1548e68245812d7428ef35f11bcb[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 12 10:12:04 2021 -0400
+
+    try new branch
+
+[33mcommit 5ff02081c53f16fdd41235f91e12d5491e071228[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 12 09:49:49 2021 -0400
+
+    CHECK if deployment was successful
+
+[33mcommit 419373cace4c8157cd3808d8f96e76c195db707c[m
+Author: Boyuan Yang <allenyby@udel.edu>
+Date:   Tue Oct 12 09:46:43 2021 -0400
+
+    CHECK if  deployment was successful
+
+[33mcommit 20de3923dd93c501ea18384d5999609d7471550d[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Oct 12 13:35:13 2021 +0000
+
+    Setting up GitHub Classroom Feedback
+
+[33mcommit 9c240ae6d034ded35b0845faf4aeeae1de5789b1[m[33m ([m[1;31morigin/feedback[m[33m)[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Oct 12 13:35:13 2021 +0000
+
+    GitHub Classroom Feedback
+
+[33mcommit 27b7696ff3a9c84cf5fa0fb3e590b0b0a56379fd[m
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Tue Oct 12 13:35:10 2021 +0000
+
+    Initial commit
