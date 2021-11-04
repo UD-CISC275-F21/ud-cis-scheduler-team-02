@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Dropdown} from "react-bootstrap";
+import logo from "./logo.png";
 
 
 function App(): JSX.Element {
@@ -8,6 +9,7 @@ function App(): JSX.Element {
         <div className="APP">
             <header>
                 UD CIS Scheduler
+                <div className="text-left"><img className="logo" src={logo} alt="Logo" /></div>
             </header>
             <p>
                 Welcome to UD CIS Scheduler make by Yongxu Boyuan Yufan! 

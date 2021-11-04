@@ -12,7 +12,7 @@ const ReadOnlyRow = ({ course, handleDeleteClick }: ReadOnlyRowProps) => {
             <td>{course.name}</td>
             <td>{course.title}</td>
             <td>{course.term}</td>
-            <td>{course.language}</td>
+            <td>{course.credit}</td>
             <td>
                 <button type="button" onClick={() => handleDeleteClick(course.id)}>
                                     Drop

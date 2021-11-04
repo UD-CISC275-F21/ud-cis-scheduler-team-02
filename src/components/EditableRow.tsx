@@ -14,7 +14,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }: 
                 <input
                     type="text"
                     required
-                    placeholder="Enter a name..."
+                    placeholder="name"
                     name="name"
                     value={editFormData.name}
                     onChange={handleEditFormChange}
@@ -24,7 +24,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }: 
                 <input
                     type="text"
                     required
-                    placeholder="Enter a title..."
+                    placeholder="title"
                     name="title"
                     value={editFormData.title}
                     onChange={handleEditFormChange}
@@ -34,7 +34,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }: 
                 <input
                     type="text"
                     required
-                    placeholder="Enter a term..."
+                    placeholder="term"
                     name="term"
                     value={editFormData.term}
                     onChange={handleEditFormChange}
@@ -44,7 +44,7 @@ const EditableRow = ({ editFormData, handleEditFormChange, handleCancelClick }: 
                 <input
                     type="text"
                     required
-                    placeholder="Enter language..."
+                    placeholder="credit"
                     name="language"
                     value={editFormData.language}
                     onChange={handleEditFormChange}

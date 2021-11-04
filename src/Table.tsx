@@ -11,14 +11,14 @@ export interface Course {
         name: string;
         title: string;
         term: string;
-        language: string;
+        credit: string;
 }
 
 export interface FormData {
         name: string;
         title: string;
         term: string;
-        language: string;
+        credit: string;
 }
 
 const Table: FC = () => {
@@ -27,14 +27,14 @@ const Table: FC = () => {
         name: "",
         title: "",
         term: "",
-        language: ""
+        credit: ""
     });
 
     const [ editFormData, setEditFormData ] = useState<FormData>({
         name: "",
         title: "",
         term: "",
-        language: ""
+        credit: ""
     });
 
     const [ editCourseId, setEditCourseId ] = useState("");
@@ -71,7 +71,7 @@ const Table: FC = () => {
             name: addFormData.name,
             title: addFormData.title,
             term: addFormData.term,
-            language: addFormData.language
+            credit: addFormData.credit
         };
 
         const newContacts = [ ...courses, newCourse ];
@@ -86,7 +86,7 @@ const Table: FC = () => {
             name: editFormData.name,
             title: editFormData.title,
             term: editFormData.term,
-            language: editFormData.language
+            credit: editFormData.credit
         };
 
         const newContacts = [ ...courses ];
@@ -107,7 +107,7 @@ const Table: FC = () => {
             name: contact.name,
             title: contact.title,
             term: contact.term,
-            language: contact.language
+            credit: contact.credit
         };
 
         setEditFormData(formValues);
@@ -137,7 +137,7 @@ const Table: FC = () => {
                             <th>Name</th>
                             <th>Title</th>
                             <th>Term</th>
-                            <th>Language</th>
+                            <th>credit</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -178,22 +178,22 @@ const Table: FC = () => {
                     type="text"
                     name="name"
                     required
-                    placeholder="enter course name"
+                    placeholder="course id"
                     onChange={handleAddFormChange}
                 />
                 <input
                     type="text"
                     name="title"
                     required
-                    placeholder="enter a course id"
+                    placeholder="course title"
                     onChange={handleAddFormChange}
                 />
                 <input type="text" name="term" required placeholder="enter a term" onChange={handleAddFormChange} />
                 <input
-                    type="language"
-                    name="language"
+                    type="credit"
+                    name="credit"
                     required
-                    placeholder="enter type language"
+                    placeholder="enter type credit"
                     onChange={handleAddFormChange}
                 />
                 <button type="submit">Add</button>
