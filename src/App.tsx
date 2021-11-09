@@ -5,6 +5,8 @@ import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Table from "./Table";
 import Summary from "./components/Summary";
+import { Dropdown} from "react-bootstrap";
+import logo from "./logo.png";
 
 export interface Course {
     CourseName: string;
@@ -78,6 +80,7 @@ function App(): JSX.Element {
         <div className="APP">
             <header>
                 UD CIS Scheduler
+                <div className="text-left"><img className="logo" src={logo} alt="Logo" /></div>
             </header>
             <p>
                 Welcome to UD CIS Scheduler make by Yongxu Boyuan Yufan!
