@@ -12,10 +12,11 @@ import "bootstrap/dist/css/bootstrap.css";
 
 
 
+
 ReactDOM.render(
     <React.StrictMode>
         <App />
-        
+        {/* <Table /> */}
     </React.StrictMode>,
     document.getElementById("root")
 );
