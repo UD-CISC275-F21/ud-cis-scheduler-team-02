@@ -1,6 +1,6 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+
 //import { Course } from "../Table";
-import React, { Course }  from "../Table";
+import React, { Course } from "../Table";
 
 interface ReadOnlyRowProps {
     course: Course;

@@ -71,10 +71,10 @@ const Table: FC = () => {
             name: addFormData.name,
             title: addFormData.title,
             term: addFormData.term,
-            credit: addFormData.credit
+            language: addFormData.language
         };
 
-        const newContacts = [ ...courses, newCourse ];
+        const newContacts = [...courses, newCourse];
         setCourses(newContacts);
     };
 
@@ -86,10 +86,10 @@ const Table: FC = () => {
             name: editFormData.name,
             title: editFormData.title,
             term: editFormData.term,
-            credit: editFormData.credit
+            language: editFormData.language
         };
 
-        const newContacts = [ ...courses ];
+        const newContacts = [...courses];
 
         const index = courses.findIndex((contact) => contact.id === editCourseId);
         if (index) {
@@ -107,6 +107,7 @@ const Table: FC = () => {
             name: contact.name,
             title: contact.title,
             term: contact.term,
+            language: contact.language
             credit: contact.credit
         };
 
@@ -119,7 +120,7 @@ const Table: FC = () => {
     };
 
     const handleDeleteClick = (contactId: string) => {
-        const newCourses = [ ...courses ];
+        const newCourses = [...courses];
 
         const index = courses.findIndex((contact) => contact.id === contactId);
 
@@ -137,6 +138,7 @@ const Table: FC = () => {
                             <th>Name</th>
                             <th>Title</th>
                             <th>Term</th>
+                            <th>Language</th>
                             <th>credit</th>
                             <th>Actions</th>
                         </tr>
@@ -152,8 +154,8 @@ const Table: FC = () => {
                                         handleEditFormChange={handleEditFormChange}
                                         handleCancelClick={handleCancelClick}
                                     />
-                                    : 
-                                    <ReadOnlyRow
+                                    :
+                                   <ReadOnlyRow
                                         course={contact}
                                         //handleEditClick={handleEditClick}
                                         handleDeleteClick={handleDeleteClick}
@@ -178,18 +180,31 @@ const Table: FC = () => {
                     type="text"
                     name="name"
                     required
+
+                    placeholder="enter course name"
+
                     placeholder="course id"
+
                     onChange={handleAddFormChange}
                 />
                 <input
                     type="text"
                     name="title"
                     required
+
+                    placeholder="enter a course id"
+
                     placeholder="course title"
+
                     onChange={handleAddFormChange}
                 />
                 <input type="text" name="term" required placeholder="enter a term" onChange={handleAddFormChange} />
                 <input
+                    type="language"
+                    name="language"
+                    required
+                    placeholder="enter type language"
+                  
                     type="credit"
                     name="credit"
                     required
