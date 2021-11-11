@@ -7,37 +7,37 @@ import EditableRow from "./components/EditableRow";
 import data from "./coursePool.json";
 
 export interface Course {
-        id: string;
-        name: string;
-        title: string;
-        term: string;
-        credit: string;
+    id: string;
+    name: string;
+    title: string;
+    term: string;
+    language: string;
 }
 
 export interface FormData {
-        name: string;
-        title: string;
-        term: string;
-        credit: string;
+    name: string;
+    title: string;
+    term: string;
+    language: string;
 }
 
 const Table: FC = () => {
-    const [ courses, setCourses ] = useState<Course[]>(data);
-    const [ addFormData, setAddFormData ] = useState<FormData>({
+    const [courses, setCourses] = useState<Course[]>(data);
+    const [addFormData, setAddFormData] = useState<FormData>({
         name: "",
         title: "",
         term: "",
-        credit: ""
+        language: ""
     });
 
-    const [ editFormData, setEditFormData ] = useState<FormData>({
+    const [editFormData, setEditFormData] = useState<FormData>({
         name: "",
         title: "",
         term: "",
-        credit: ""
+        language: ""
     });
 
-    const [ editCourseId, setEditCourseId ] = useState("");
+    const [editCourseId, setEditCourseId] = useState("");
 
     const handleAddFormChange = (event: ChangeEvent<HTMLInputElement>) => {
         event.preventDefault();
@@ -108,7 +108,6 @@ const Table: FC = () => {
             title: contact.title,
             term: contact.term,
             language: contact.language
-            credit: contact.credit
         };
 
         setEditFormData(formValues);
@@ -139,23 +138,22 @@ const Table: FC = () => {
                             <th>Title</th>
                             <th>Term</th>
                             <th>Language</th>
-                            <th>credit</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
-                        
-                        
-                        {courses.map((contact) => 
+
+
+                        {courses.map((contact) =>
                             <Fragment>
-                                {editCourseId === contact.id ? 
+                                {editCourseId === contact.id ?
                                     <EditableRow
                                         editFormData={editFormData}
                                         handleEditFormChange={handleEditFormChange}
                                         handleCancelClick={handleCancelClick}
                                     />
                                     :
-                                   <ReadOnlyRow
+                                    <ReadOnlyRow
                                         course={contact}
                                         //handleEditClick={handleEditClick}
                                         handleDeleteClick={handleDeleteClick}
@@ -180,22 +178,14 @@ const Table: FC = () => {
                     type="text"
                     name="name"
                     required
-
                     placeholder="enter course name"
-
-                    placeholder="course id"
-
                     onChange={handleAddFormChange}
                 />
                 <input
                     type="text"
                     name="title"
                     required
-
                     placeholder="enter a course id"
-
-                    placeholder="course title"
-
                     onChange={handleAddFormChange}
                 />
                 <input type="text" name="term" required placeholder="enter a term" onChange={handleAddFormChange} />
@@ -204,11 +194,6 @@ const Table: FC = () => {
                     name="language"
                     required
                     placeholder="enter type language"
-                  
-                    type="credit"
-                    name="credit"
-                    required
-                    placeholder="enter type credit"
                     onChange={handleAddFormChange}
                 />
                 <button type="submit">Add</button>
