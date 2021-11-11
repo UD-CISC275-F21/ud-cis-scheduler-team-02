@@ -3,7 +3,6 @@ import React, { useState, Fragment, FC, ChangeEvent, FormEvent } from "react";
 import { nanoid } from "nanoid";
 import "./App.css";
 import ReadOnlyRow from "./components/ReadOnlyRow";
-import EditableRow from "./components/EditableRow";
 import data from "./coursePool.json";
 
 export interface Course {
