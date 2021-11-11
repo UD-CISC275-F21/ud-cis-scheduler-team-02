@@ -1,4 +1,4 @@
-
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 //import { Course } from "../Table";
 import React, { Course } from "../Table";
 
@@ -12,10 +12,10 @@ const ReadOnlyRow = ({ course, handleDeleteClick }: ReadOnlyRowProps) => {
             <td>{course.name}</td>
             <td>{course.title}</td>
             <td>{course.term}</td>
-            <td>{course.credit}</td>
+            <td>{course.language}</td>
             <td>
                 <button type="button" onClick={() => handleDeleteClick(course.id)}>
-                                    Drop
+                    Drop
                 </button>
             </td>
         </tr>
