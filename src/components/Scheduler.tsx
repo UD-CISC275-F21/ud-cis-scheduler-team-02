@@ -205,7 +205,7 @@ const Scheduler = ({ scheduler, setScheduler }: SchedulerProp): JSX.Element => {
             </DragDropContext>
         </div>
     </div>
-        ;
+    ;
 };
 
 export default Scheduler;
