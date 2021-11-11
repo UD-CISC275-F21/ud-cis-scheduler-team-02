@@ -146,12 +146,6 @@ const Table: FC = () => {
                         {courses.map((contact) =>
                             <Fragment>
                                 {editCourseId === contact.id ?
-                                    <EditableRow
-                                        editFormData={editFormData}
-                                        handleEditFormChange={handleEditFormChange}
-                                        handleCancelClick={handleCancelClick}
-                                    />
-                                    :
                                     <ReadOnlyRow
                                         course={contact}
                                         //handleEditClick={handleEditClick}
