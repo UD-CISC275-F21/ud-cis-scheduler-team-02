@@ -1,8 +1,7 @@
 /* eslint-disable react/jsx-key */
-import React, { useState, Fragment, FC, ChangeEvent, FormEvent } from "react";
+import React, { useState, FC, ChangeEvent, FormEvent } from "react";
 import { nanoid } from "nanoid";
 import "./App.css";
-import ReadOnlyRow from "./components/ReadOnlyRow";
 import data from "./coursePool.json";
 
 export interface Course {
@@ -29,12 +28,6 @@ const Table: FC = () => {
         language: ""
     });
 
-    const [editFormData, setEditFormData] = useState<FormData>({
-        name: "",
-        title: "",
-        term: "",
-        language: ""
-    });
 
     const [editCourseId, setEditCourseId] = useState("");
 
@@ -50,17 +43,6 @@ const Table: FC = () => {
         }
     };
 
-    const handleEditFormChange = (event: ChangeEvent<HTMLInputElement>) => {
-        event.preventDefault();
-
-        const fieldName = event.target.getAttribute("name");
-        const fieldValue = event.target.value;
-
-        if (fieldName) {
-            const newFormData = { ...editFormData, [fieldName]: fieldValue };
-            setEditFormData(newFormData);
-        }
-    };
 
     const handleAddFormSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -113,19 +95,6 @@ const Table: FC = () => {
     };
     */
 
-    const handleCancelClick = () => {
-        setEditCourseId("");
-    };
-
-    const handleDeleteClick = (contactId: string) => {
-        const newCourses = [...courses];
-
-        const index = courses.findIndex((contact) => contact.id === contactId);
-
-        newCourses.splice(index, 1);
-
-        setCourses(newCourses);
-    };
 
     return (
         <div className="app-container">
@@ -141,25 +110,6 @@ const Table: FC = () => {
                         </tr>
                     </thead>
                     <tbody>
-
-
-                        {courses.map((contact) =>
-                            <Fragment>
-                                {editCourseId === contact.id ?
-                                    <ReadOnlyRow
-                                        course={contact}
-                                        //handleEditClick={handleEditClick}
-                                        handleDeleteClick={handleDeleteClick}
-                                    />
-                                }
-                            </Fragment>
-
-
-
-
-
-
-                        )}
                     </tbody>
                 </table>
             </form>
