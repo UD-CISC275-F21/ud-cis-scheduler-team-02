@@ -1,0 +1,87 @@
+[
+    {
+        "name": "CISC 108", 
+        "title": "Introduction to Computer Science I",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "CISC 181",
+        "title": "Introduction to Computer Science II",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "CISC 210",
+        "title": "Introduction to Systems Programming",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "CISC 220",
+        "title": "Data Structures",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "CISC 260",
+        "title": "Introduction to Engineering (FYE)",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "MATH 241",
+        "title": "Analytic Geometry & Calculus A",
+        "term": "Fall and Spring",
+        "credit": "4"
+    },
+    {
+        "name": "ENGL 110",
+        "title": "Seminar in composition",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "EGGG 101",
+        "title": "Introduction to Software Engineering",
+        "term": "Fall and Spring",
+        "credit": "2"
+    },
+    {
+        "name": "MATH 242",
+        "title": "Calculus B",
+        "term": "Fall and Spring",
+        "credit": "4"
+    },
+    {
+        "name": "MATH 210",
+        "title": "Discrete Mathematics I",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "MATH 205",
+        "title": "Statistical Methods",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "EGGG 101",
+        "title": "Introduction to Software Engineering",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "EGGG 101",
+        "title": "Introduction to Software Engineering",
+        "term": "Fall and Spring",
+        "credit": "3"
+    },
+    {
+        "name": "CISC 355",
+        "title": "Computers Ethics & Society",
+        "term": "Fall and Spring",
+        "credit": "3"
+    }
+
+]
