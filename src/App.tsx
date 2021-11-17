@@ -1,11 +1,13 @@
 /* eslint-disable react/jsx-no-undef */
 import React, { useState } from "react";
 import "./App.css";
+import Table from "react-bootstrap/Table";
 // import { Dropdown } from "react-bootstrap";
 import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Summary from "./components/Summary";
-import Table from "react-bootstrap/Table";
+ 
+
 
 export interface Course {
     CourseName: string;
