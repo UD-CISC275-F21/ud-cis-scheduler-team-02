@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-undef */
 import React, { useState } from "react";
 import "./App.css";
 // import { Dropdown } from "react-bootstrap";
 import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Table from "./Table";
 import Summary from "./components/Summary";
+import Table from "react-bootstrap/esm/Table";
 
 export interface Course {
     CourseName: string;
@@ -89,9 +90,6 @@ function App(): JSX.Element {
                 <div>
                     <nav>
                         <ul>
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
                             <li>
                                 <Link to="/scheduler">Scheduler</Link>
                             </li>
