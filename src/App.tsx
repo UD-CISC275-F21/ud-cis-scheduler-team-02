@@ -5,7 +5,7 @@ import "./App.css";
 import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Summary from "./components/Summary";
-import Table from "react-bootstrap/esm/Table";
+import Table from "react-bootstrap/Table";
 
 export interface Course {
     CourseName: string;
