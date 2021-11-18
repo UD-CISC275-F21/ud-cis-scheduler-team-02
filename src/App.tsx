@@ -1,11 +1,14 @@
 /* eslint-disable react/jsx-no-undef */
 import React, { useState } from "react";
 import "./App.css";
+import Table from "react-bootstrap/Table";
 // import { Dropdown } from "react-bootstrap";
 import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Summary from "./components/Summary";
+import logo from "./logo.png";
 import Table from "react-bootstrap/Table";
+
 
 export interface Course {
     CourseName: string;
@@ -106,6 +109,7 @@ function App(): JSX.Element {
             <header>
                 UD CIS Scheduler
             </header>
+            <img src={logo} alt="" />
             <p>
                 Welcome to UD CIS Scheduler make by Yongxu Boyuan Yufan!
             </p>
@@ -122,6 +126,10 @@ function App(): JSX.Element {
                             <li>
                                 <Link to="/preview">Preview</Link>
                             </li>
+                            <li>
+                                <a href="https://www.cis.udel.edu/academics/undergraduate-programs/bscs/">Common Plan</a>
+                            </li>
+                            
                         </ul>
                     </nav>
 
