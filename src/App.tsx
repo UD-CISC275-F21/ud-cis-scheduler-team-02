@@ -5,6 +5,43 @@ import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Table from "./Table";
 import Summary from "./components/Summary";
+import DropdownBox from "react-dropdown";
+
+const options =["Prerequisite for CISC181 and CISC210 is CISC108.", "Prerequisite for MATH242 is MATH241.", "Prerequisite for CISC220 and CISC260 is CISC210.", "Prerequisites for MATH210 is MATH241 and MATH242.", "Prerequisite for MATH243 is MATH242.", "Prerequisites for CISC275 is CISC181 and CISC220.", "Prerequisite for MATH205 is MATH210.", "Prerequisite for MATH350 is MATH243."];
+const defaultOption = "Click Me";
+
+const options1 =["EGGG101 shoulb be taken in first year.", "ENGL110 is required for everyone.", "College, University Breadth, and University Requirements.", "2 science courses with labs.","Complete CISC courses"];
+const defaultOption1 = "Click Me";
+
+const styles1 = {
+    dropdown: {
+        width: "40%",
+        //padding: "0px 0px",
+        margin: "10px auto",
+        background: "grey",
+        borderRadius: "90px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontSize: 17,
+        border: "10px solid black",
+    },
+} as const;
+
+const styles = {
+    dropdown: {
+        width: "40%",
+        //padding: "0px 0px",
+        margin: "10px auto",
+        background: "grey",
+        borderRadius: "90px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        fontSize: 17,
+        border: "10px solid black",
+    },
+} as const;
 
 export interface Course {
     CourseName: string;
@@ -136,62 +173,18 @@ function App(): JSX.Element {
                         }>
                         </Route>
                         <Route path="/" element={<Table></Table>} />
+                        
                     </Routes>
                 </div>
             </Router >
-            {/* <div className="btn-group">
-                <button type="button" className="btn btn-primary">Help</button>
-                <button type="button" className="btn btn-primary">About</button>
-                <button type="button" className="btn btn-primary">Import file</button>
-                <button type="button" className="btn btn-primary">Export file</button>
-            </div> */}
-
-            {/* <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Freshmen
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1"><button>Freshmen Fall</button></Dropdown.Item>
-                    <Dropdown.Item href="#/action-2"><button>Freshmen Spring</button></Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Sophomore
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1"><button>Sophomore Fall</button></Dropdown.Item>
-                    <Dropdown.Item href="#/action-2"><button>Sophomore Spring</button></Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Junior
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1"><button>Junior Fall</button></Dropdown.Item>
-                    <Dropdown.Item href="#/action-2"><button>Junior Spring</button></Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <Dropdown>
-                <Dropdown.Toggle variant="success" id="dropdown-basic">
-                    Senior
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                    <Dropdown.Item href="#/action-1"><button>Senior Fall</button></Dropdown.Item>
-                    <Dropdown.Item href="#/action-2"><button>Senior Spring</button></Dropdown.Item>
-                </Dropdown.Menu>
-            </Dropdown>
-            <div>
-                <button type="button" className="btn btn-primary">4 Year Plan</button>
+            <div style={styles.dropdown}>
+                <h3>Course Prerequisites</h3>
+                <DropdownBox options={options} value={defaultOption} placeholder="Select an option" />
             </div>
-            <div>
-                <button type="button" className="btn btn-primary">Course Search</button>
-            </div> */}
+            <div style={styles1.dropdown}>
+                <h3>Degree Requirements</h3>
+                <DropdownBox options={options1} value={defaultOption1} placeholder="Select an option" />
+            </div>
         </div >
     );
 }
