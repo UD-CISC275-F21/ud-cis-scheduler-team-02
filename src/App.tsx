@@ -7,6 +7,7 @@ import Scheduler from "./components/Scheduler";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Summary from "./components/Summary";
 import DropdownBox from "react-dropdown";
+import logo from "./logo.png";
 
 const options =["Prerequisite for CISC181 and CISC210 is CISC108.", "Prerequisite for MATH242 is MATH241.", "Prerequisite for CISC220 and CISC260 is CISC210.", "Prerequisites for MATH210 is MATH241 and MATH242.", "Prerequisite for MATH243 is MATH242.", "Prerequisites for CISC275 is CISC181 and CISC220.", "Prerequisite for MATH205 is MATH210.", "Prerequisite for MATH350 is MATH243."];
 const defaultOption = "Click Me";
@@ -148,7 +149,7 @@ function App(): JSX.Element {
                 Welcome to UD CIS Scheduler make by Yongxu Boyuan Yufan!
             </p>
             <p>
-                You can asscess your each year plan or 4 year whole plan through homepage, you can also go to course search to find course information.
+                You can asscess your each year plan or 4 year whole plan through homepage, you can also go to course search to find course information. Course prerequisites and degree requirment are shown in the below.
             </p>
             <Router>
                 <div>

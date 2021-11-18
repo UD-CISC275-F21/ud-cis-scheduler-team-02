@@ -110,7 +110,7 @@ const Scheduler = ({ scheduler, setScheduler }: SchedulerProp): JSX.Element => {
                                 flexDirection: "column",
                                 alignItems: "center",
                                 // color: "white",
-                                border: "1px solid darkgrey",
+                                border: "2px solid darkgrey",
                                 background: "lightgrey",
                                 // padding: "5px",
                                 margin: "0px 10px",
