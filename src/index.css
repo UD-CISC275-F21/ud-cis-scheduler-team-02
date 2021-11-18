@@ -1,82 +1,44 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 40px;
+  background-color:lightsalmon;
 }
-header {
-  text-align: center;
-
-  min-height: 15vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(20px + 2vmin);
-  color:black;
-}
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-table {
-  font-family: Arial, Helvetica, sans-serif;
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid black;
-  padding: 100px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: left;
-  background-color: pink;
-  table-layout:fixed;
-  color: red;
-  border: solid;
-  border-width: 1px 0;
-  border-top: none;
-  border-bottom: none;
-}
-button {
-  margin-top: 50px;
-  width: 100px;
-  content: center;
-  position: center;
-
-  background-color: purple; /* Green */
-  border: none;
-  color: white;
-  text-align: center;
-  font-size: 16px;
+img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+ul {
+  text-align: left;
+  margin: 40px;
+  text-align: left;
+  font-size: 30px;
+}
+div {
+  margin: 10px;
+  outline: 1px dashed pink;
+  outline-offset: 5px;
+}
+header{
+  text-align: center;
+  font-size: 50px;
+
+  text-shadow: 2px 2px red;
+}
+p{
+  text-align: center;
+  font-size: 25px;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
 
-.button:hover span {
-  padding-right: 25px;
-}
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
 
-logo{
-  height: 10%;
-  width: 20%;
 
-}
