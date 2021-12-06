@@ -45,6 +45,12 @@ const styles = {
     },
 } as const;
 
+function download(){
+    function semCourses(c: Course[]){
+        const semCourse = c.map((co: Course) => co.CourseName + "," + co.Credit+ "," + co.Description + "\n");
+        return semCourse;
+    }
+
 export interface Course {
     CourseName: string;
     Credit: number;
