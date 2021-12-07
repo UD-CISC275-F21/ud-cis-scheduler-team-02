@@ -45,12 +45,6 @@ const styles = {
     },
 } as const;
 
-function download(){
-    function semCourses(c: Course[]){
-        const semCourse = c.map((co: Course) => co.CourseName + "," + co.Credit+ "," + co.Description + "\n");
-        return semCourse;
-    }
-
 export interface Course {
     CourseName: string;
     Credit: number;
@@ -105,6 +99,7 @@ const list = [
     { CourseName: "BISC207", Credit: 4, Description: "Introductory Biology I"},
     { CourseName: "BISC208", Credit: 4, Description: "Introductory Biology II"}
 ];
+
 
 function App(): JSX.Element {
     const [scheduler, setScheduler] = useState<{ [x: string]: CourseList; }>({
